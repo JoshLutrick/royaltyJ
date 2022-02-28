@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <!-- Font Awesome -->
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +11,42 @@
     <title>Royalty J - Home</title>
 </head>
 <body>
-    <nav class="navbar">
-        <img src="Images/royaltylogo.png" alt="Royalty J Logo">
-        
-    </nav>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__head">
+                <img src="Images/royaltylogo.png" alt="Royalty J Logo">
+                <i class="fa-solid fa-bars"></i>
+                <div class="navbar__links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Pricing</a>
+                </div>
+            </div>
+        </nav>
+        <div class="menudisplay menudisplay__hide">
+            <ul class="menudisplay__list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="introduction">
+        <img class="introduction__img" src="Images/Introduction.png" alt="Introduction">
+    </section>
+    <section class="about">
+        <img class="about__introduction" src="Images/About Introduction.png" alt="">
+        <div class="aboutgrid">
+            <div class="aboutgrid__icon1">
+                <img class="aboutgrid__interactive" src="Images/Interactive.png" alt="Interactive Logo">
+            </div>
+            <div class="aboutgrid__icon2">
+                <img class="aboutgrid__responsive" src="Images/Responsive.png" alt="">
+            </div>
+            <div class="aboutgrid__icon3">
+                <img class="aboutgrid__custom" src="Images/Custom.png" alt="">
+            </div>
+        </div>
+    </section>
 </body>
 </html>

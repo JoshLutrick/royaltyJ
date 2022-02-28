@@ -2,3 +2,129 @@
     margin: 0;
     padding: 0;
 }
+body {
+    height: 300rem;
+}
+.fa-solid {
+    color: #996e23;
+    font-size: 4rem;
+    cursor: pointer;
+}
+/* Navigation */
+.navbar {
+    background-color: white;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid black;
+    width: 100vw;
+}
+.navbar__head {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar__head img {
+    width: 8rem;
+}
+.navbar__links {
+    display: none;
+}
+.menudisplay {
+    background-color: #C0B5A1;
+    width: 100%;
+    height: 20rem;
+    position: fixed;
+    top: 7rem;
+    transition: .5s;
+    transform: translateX(0rem);
+    z-index: 999;
+}
+.menudisplay__list, a {
+    line-height: 2;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+.menudisplay__hide {
+    transform: translateX(100rem);
+}
+/* Introduction */
+.introduction__img {
+    width: 100%;
+    margin-top: 7rem;
+}
+/* About Section */
+.about__introduction {
+    width: 100%;
+}
+.aboutgrid {
+    gap: .5rem;
+    width: 90%;
+    margin: 4rem auto;
+    display: grid;
+    grid-template: .8fr .8fr / .8fr .8fr;
+}
+.aboutgrid__icon1 {
+    grid-column: 1 / 0;
+}
+.aboutgrid__interactive {
+    width: 100%;
+}
+.aboutgrid__icon2 {
+    grid-column: 2 / 0;
+}
+.aboutgrid__responsive {
+    width: 100%;
+}
+.aboutgrid__icon3 {
+    grid-row: 2 / 0;
+    grid-column: 1 / 3;
+}
+.aboutgrid__custom {
+    width: 100%;
+}
+@media (min-width: 735px) {
+    body {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .fa-solid {
+        display: none;
+    }
+    /* Navigation */
+    .navbar {
+        width: 80%;
+        left: 10%;
+    }
+    .navbar__links {
+        padding: 1rem;
+        display: block;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .navbar__links a {
+        width: 30%;
+        color: #996e23;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+    .navbar__links a:hover {
+        border-bottom: 4px solid #996e23;
+    }
+    .menudisplay {
+        display: none;
+    }
+    /* About */
+    .aboutgrid {
+        gap: .5rem;
+        width: 70%;
+        margin: 4rem auto;
+        display: grid;
+        grid-template: .8fr .8fr / .8fr .8fr;
+    }
+}
