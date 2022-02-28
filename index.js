@@ -1,8 +1,12 @@
 const navElements = {
     toggleBtn: document.querySelector('.fa-solid'),
     navMenu: document.querySelector('.menudisplay')
-}
+};
 
+const aboutElements = {
+    aboutcontainer: document.querySelector('.aboutgrid'),
+    roundLogo: document.querySelector('.aboutgrid__roundlogo')
+}
 
 navElements.toggleBtn.addEventListener('click', function(){
     if(navElements.navMenu.classList.contains('menudisplay__hide')){
@@ -14,4 +18,12 @@ navElements.toggleBtn.addEventListener('click', function(){
         navElements.toggleBtn.classList.add('fa-bars');
         navElements.toggleBtn.classList.remove('fa-xmark');
     }
+})
+
+window.addEventListener('scroll', function(){
+    if(window.scrollY > 530){
+        aboutElements.aboutcontainer.classList.add('aboutgrid__pop');
+    }
+    let rate = window.scrollY * 0.1;
+    aboutElements.roundLogo.style.transform = `rotate(${rate}deg)`;
 })

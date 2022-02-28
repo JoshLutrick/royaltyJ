@@ -4,11 +4,22 @@
 }
 body {
     height: 300rem;
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 .fa-solid {
     color: #996e23;
     font-size: 4rem;
     cursor: pointer;
+    transition: 1s;
 }
 /* Navigation */
 .navbar {
@@ -73,12 +84,14 @@ body {
 }
 .aboutgrid__interactive {
     width: 100%;
+    transition: .3s;
 }
 .aboutgrid__icon2 {
     grid-column: 2 / 0;
 }
 .aboutgrid__responsive {
     width: 100%;
+    transition: .3s;
 }
 .aboutgrid__icon3 {
     grid-row: 2 / 0;
@@ -86,6 +99,12 @@ body {
 }
 .aboutgrid__custom {
     width: 100%;
+    transition: .3s;
+}
+.aboutgrid__roundlogo {
+    width: 20rem;
+    display: block;
+    margin: 0 auto;
 }
 @media (min-width: 735px) {
     body {
@@ -126,5 +145,24 @@ body {
         margin: 4rem auto;
         display: grid;
         grid-template: .8fr .8fr / .8fr .8fr;
+        transform: scale(0);
+        transition: 1s;
+    }
+    .aboutgrid__pop {
+        transform: scale(1);
+    }
+    .aboutgrid__interactive:hover {
+        transform: scale(1.02);
+    }
+    .aboutgrid__responsive:hover {
+        transform: scale(1.02);
+    }
+    .aboutgrid__custom:hover {
+        transform: scale(1.02);
+    }
+    .aboutgrid__roundlogo {
+        width: 30rem;
+        display: block;
+        margin: 0 auto;
     }
 }
