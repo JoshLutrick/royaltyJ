@@ -1,4 +1,5 @@
 # royaltyJ Freelance
+##### This project is for freelancing
 
 ## Desktop View
 
