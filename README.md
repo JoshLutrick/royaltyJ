@@ -14,9 +14,3 @@ This website is for freelancing and building clients websites
 * HTML
 * CSS
 * JAVASCRIPT
-
-## Collaborators
-NONE
-
-## License
-This is a business website and should not be **CLONED**
