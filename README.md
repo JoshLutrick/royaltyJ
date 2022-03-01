@@ -14,3 +14,6 @@ This website is for freelancing and building clients websites
 * HTML
 * CSS
 * JAVASCRIPT
+
+## License
+This is a business website and should not be copied
