@@ -15,5 +15,8 @@ This website is for freelancing and building clients websites
 * CSS
 * JAVASCRIPT
 
+## Collaborators
+NONE
+
 ## License
 This is a business website and should not be **CLONED**
