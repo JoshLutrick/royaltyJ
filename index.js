@@ -27,3 +27,17 @@ window.addEventListener('scroll', function(){
     let rate = window.scrollY * 0.1;
     aboutElements.roundLogo.style.transform = `rotate(${rate}deg)`;
 })
+
+console.log(document.body.childElementCount);
+
+function removeChildElem(elem){
+    let wait = setInterval(() => {
+        document.body.removeChild(elem);
+    }, 2000);
+}
+
+let loader = document.querySelector('.screenloader');
+
+window.addEventListener('load', removeChildElem(loader));
+
+
